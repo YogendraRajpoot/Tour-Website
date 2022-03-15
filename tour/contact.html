@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Tour Template</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+        }
+
+        /*nav bar start*/
+        .contact_div_image {
+            width: 100%;
+            height: 680px;
+            overflow: hidden;
+
+        }
+
+        #contact_nav_image {
+            margin-left: -4%;
+            margin-top: -15%;
+            width: 107%;
+            height: 185%;
+            background-image: linear-gradient(black, 0.6, black, 0.6);
+
+
+        }
+
+        #contact_div_centertext {
+            position: absolute;
+            /* border: 2px solid black; */
+            /* background: black; */
+            width: 100%;
+            height: 24vh;
+            margin-top: 200px;
+            overflow: hidden;
+
+
+
+        }
+
+        #contact_div_centertext1 {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 41px;
+            text-shadow: 2px 2px black;
+
+        }
+
+        #contact_div_centertext2 {
+            color: white;
+            font-size: 53px;
+            text-align: center;
+            margin-top: 22px;
+            margin-top: 10px;
+            text-shadow: 2px 2px black;
+        }
+
+        .contact_nav_menubar {
+            position: absolute;
+            margin-top: 0%;
+            margin-left: 91%;
+            z-index: 1;
+            height: 0px;
+            width: 0px;
+        }
+
+        #contact_nav {
+            color: white;
+            position: absolute;
+            margin-left: 1%;
+            margin-top: 35px;
+            width: 98%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            padding: 1%;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .contact_nav_left {
+            font-size: 24px;
+            height: fit-content;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .contact_nav_right_ul {
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            flex-wrap: wrap;
+            width: 500px;
+        }
+
+        .contact_nav_right_ul>li {
+            padding-left: 5%;
+        }
+
+        .contact_nav_right_ul>li>a {
+            color: white;
+        }
+
+        .contact_nav_right_ul>li>a:hover {
+            color: rgba(255, 221, 0, 255);
+        }
+
+        .contact_nav_right_ul>li>a:active {
+            color: rgba(255, 221, 0, 255);
+        }
+
+        /*nav bar end*/
+        #section-form {
+            width: 70%;
+            margin: 10vh auto 0;
+            padding: 20px 40px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input {
+            padding: 8px 11px;
+        }
+
+        form .different {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form .different>div {
+            width: 49%;
+        }
+
+        form .different>div input {
+            width: 100%;
+            padding: 20px;
+        }
+
+        form .block input,
+        textarea {
+            width: 100%;
+            padding: 20px;
+        }
+
+        #button {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #button>input {
+            background-color: #ffdd00;
+            padding: 14px 25px;
+            border-radius: 50px;
+            border-style: none;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        #section-form input,
+        textarea {
+            font-size: 17px;
+        }
+
+        #section-form label {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #section-form h3 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        #contact_sec img {
+            width: 24px;
+            height: 24px;
+            margin-right: 14px;
+        }
+
+        #contact_sec {
+            width: 70%;
+            padding: 20px 40px;
+            margin: auto;
+            margin-bottom: 150px;
+        }
+
+        #contact_sec h3 {
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+
+        #contact_sec>div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #contact_sec>div div {
+            display: flex;
+            margin-right: 1.5%;
+        }
+
+        #contact_sec img+p {
+            font-size: 18px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        .s2_signup_container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1437652633673-cc02b9c67a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
+
+            height: 60vh;
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .s2_signuphead {
+            margin-top: 2%;
+            font-size: 35px;
+            margin-bottom: 2%;
+        }
+
+        .s2_signupip {
+            height: 50px;
+            width: 18%;
+            border-radius: 25px 0px 0px 25px;
+            border: none;
+            padding-left: 15px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .s2_signupbtn {
+            border-radius: 0px 25px 25px 0px;
+            height: 50px;
+            width: 8%;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(255, 221, 0);
+            color: white;
+            font-size: 15px;
+        }
+
+        .s2_signinbtn {
+            margin-bottom: 4%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .s2_signtext {
+            margin-bottom: 1.5%;
+        }
+
+        footer {
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(44, 46, 62);
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr;
+            padding-top: 8%;
+            padding-bottom: 8%;
+        }
+
+        footer h2 {
+            font-weight: 400;
+            padding-bottom: 8%;
+            font-size: 20px;
+            color: white;
+        }
+
+        footer p {
+            line-height: 6vh;
+            color: rgb(167, 168, 173);
+            font-size: 14px;
+        }
+
+        footer p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer h4 {
+            font-weight: 400;
+            color: rgb(167, 168, 173);
+            font-size: 14px;
+        }
+
+        footer :nth-child(4)>h4 {
+            padding-top: 12px;
+            padding-right: 10%;
+        }
+
+        footer :nth-child(1)>h4 {
+            margin-left: 10%;
+            padding-top: 12px;
+            padding-right: 15%;
+            line-height: 4vh;
+        }
+
+        footer :nth-child(1)>h2 {
+            margin-left: 10%;
+        }
+
+        .s2_socialicon {
+            padding-top: 4%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 10%;
+        }
+
+        .s2_socialicon img {
+            height: 38px;
+            width: 38px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        footer :nth-child(4) h4 {
+            padding-right: 8vw;
+
+        }
+
+        footer :nth-child(4) h4:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer :nth-child(5) :nth-child(2) {
+            padding-right: 8vw;
+        }
+
+
+        footer :nth-child(2) :nth-child(2) {
+            padding-top: 8%;
+        }
+
+        .s2_topdeals {
+            padding-top: 8%;
+        }
+
+
+        .s2_lastline {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(44, 46, 62);
+            color: rgb(167, 168, 173);
+            font-size: 15px;
+
+        }
+
+        .s2_lastline img {
+            height: 18px;
+        }
+
+        .s2_btmline {
+            color: rgb(255, 221, 0);
+            padding-bottom: 7%;
+            cursor: pointer;
+        }
+
+        /*nav media querie start*/
+        @media only screen and (max-width: 770px) {
+            #contact_nav {
+                overflow: hidden;
+                /* background-color: black; */
+                height: 63%;
+                margin-top: 0;
+            }
+
+            .contact_nav_menubar {
+                position: absolute;
+                margin-top: 19%;
+                margin-left: -13%;
+                z-index: 1;
+                height: 30px;
+                width: 35px;
+            }
+
+            .contact_nav_menubar:hover {
+                position: absolute;
+                z-index: 1;
+                height: 34px;
+                width: 40px;
+                transition: left 0.4 ease;
+            }
+
+            .contact_nav_right.active {
+                right: 0;
+            }
+
+
+
+            .contact_nav_right {
+                position: absolute;
+                margin-top: 85vh;
+                height: 147vh;
+                width: 267px;
+                background-color: black;
+                right: -267px;
+                z-index: 1;
+            }
+
+            .contact_nav_right_ul {
+                font-size: 13px;
+                display: block;
+                list-style-type: none;
+            }
+
+            .contact_nav_right_ul>li {
+                margin-top: 7%;
+            }
+
+            .contact_nav_right_ul>li>a {
+                color: white;
+            }
+
+            .contact_nav_right_ul>li>a:hover {
+                color: rgba(255, 221, 0, 255);
+            }
+
+            .contact_nav_right_ul>li>a:active {
+                color: rgba(255, 221, 0, 255);
+            }
+
+            .contact_nav_left {
+                font-size: 24px;
+                height: fit-content;
+                cursor: pointer;
+                font-weight: 600;
+                margin-top: -48vh;
+                margin-left: 4%;
+            }
+
+
+        }
+
+        /*nav media querie end*/
+
+        @media screen and (max-width: 760px) {
+            #section-form {
+                width: 80%;
+            }
+
+            form .different {
+                flex-direction: column;
+            }
+
+            form .different>div {
+                width: 100%;
+            }
+
+            #contact_sec>div {
+                flex-direction: column;
+            }
+
+            #contact_sec>div>div {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .s2_signupbtn {
+                height: 45px;
+                width: 12%;
+            }
+
+            .s2_signupip {
+                height: 45px;
+                width: 30%;
+            }
+
+            .s2_signtext {
+                margin-bottom: 2%;
+            }
+
+            .s2_signup_container {
+                height: 60vh;
+            }
+
+            footer {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 8%;
+                padding-bottom: 8%;
+                text-align: left;
+                padding-left: 3%;
+            }
+
+
+            footer :nth-child(2) :nth-child(2) {
+                padding-top: 0%;
+            }
+
+            .s2_topdeals {
+                padding-top: 0%;
+            }
+
+            footer h2 {
+                padding-top: 5%;
+                font-weight: 400;
+                padding-bottom: 1%;
+                font-size: 20px;
+                color: white;
+            }
+
+            footer :nth-child(1)>h2 {
+                margin-left: 0%;
+            }
+
+            footer :nth-child(1)>h4 {
+                margin-left: 0%;
+            }
+
+            .s2_socialicon {
+                margin-left: 0%;
+            }
+
+            .s2_lastline {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-family: 'Quicksand', sans-serif;
+                background-color: rgb(44, 46, 62);
+                color: rgb(167, 168, 173);
+                font-size: 13px;
+                padding-left: 3%;
+                padding-right: 3%;
+
+            }
+
+            .s2_lastline img {
+                height: 18px;
+            }
+
+            .s2_btmline {
+                color: rgb(255, 221, 0);
+                padding-bottom: 7%;
+                cursor: pointer;
+            }
+
+        }
+
+        @media screen and (max-width: 420px) {
+            #section-form {
+                width: 80%;
+            }
+
+            .s2_signupbtn {
+                height: 50px;
+                width: 20%;
+                font-size: 12px;
+            }
+
+            .s2_signupip {
+                height: 50px;
+                width: 60%;
+            }
+
+            .s2_signtext {
+                margin-top: 2%;
+                margin-bottom: 4%;
+                padding-left: 3%;
+                padding-right: 3%;
+
+            }
+
+            .s2_signup_container {
+                height: 60vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--nav start-->
+    <section id="contact">
+        <!-- NAVIGATION BAR START -->
+        <nav id="contact_nav">
+
+            <div class="contact_nav_left">TOUR</div>
+            <div class="contact_nav_right" onclick="togglemenu()">
+                <img src="menubar.png" alt="" class="contact_nav_menubar">
+                <ul class="contact_nav_right_ul">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Tours</a>
+                    </li>
+                    <li>
+                        <a href="findHotel.html">Hotels</a>
+                    </li>
+                    <li>
+
+                        <a href="services.html">Services</a>
+
+                       
+
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="contact_div_image">
+            <div id="contact_div_centertext">
+                <p id="contact_div_centertext1">BY COLORLIB.COM</p>
+                <p id="contact_div_centertext2">Contact us</p>
+            </div>
+            <img src="./contact.image.webp" id="contact_nav_image">
+        </div>
+
+
+        <!-- NAVIGATION BAR END -->
+
+    </section>
+
+    <!--nav end-->
+    <section id="section-form">
+        <h3>Get In Touch</h3>
+        <form>
+            <div class="different">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your firstname">
+                </div>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Your Lastname">
+                </div>
+            </div>
+            <div class="block">
+                <label>Email</label>
+                <input type="text" placeholder="Your email address">
+            </div>
+            <div class="block">
+                <label>Subject</label>
+                <input type="text" placeholder="Your subject of this message">
+            </div>
+            <div class="block">
+                <label>Message</label>
+                <textarea cols="30" rows="10" placeholder="Say something about us"></textarea>
+            </div>
+            <div id="button">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </section>
+    <section id="contact_sec">
+        <h3>Contact Information</h3>
+        <div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/447/447031.png" />
+                <p>198 West 21th Street,<br />
+                    Suite 721 New York NY 10016</p>
+            </div>
+            <div>
+                <img
+                    src="https://cdn-icons.flaticon.com/png/512/2512/premium/2512051.png?token=exp=1642587153~hmac=4daad38d6026786dd887f8f985f1f9f2" />
+                <p>+ 1235 2355 98</p>
+            </div>
+            <div>
+                <img
+                    src="https://cdn-icons.flaticon.com/png/128/3471/premium/3471649.png?token=exp=1642587008~hmac=f95e9b9f819f785e7e7c3e6c59593cfa" />
+                <p>info@yoursite.com</p>
+            </div>
+            <div>
+                <img
+                    src="https://cdn-icons.flaticon.com/png/128/4460/premium/4460402.png?token=exp=1642587063~hmac=c79382c2479b7bd7a12d3e4f26331e68" />
+                <p>yoursite.com</p>
+            </div>
+        </div>
+    </section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4657.840207785984!2d77.61032062599372!3d12.934508868093086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1525f3226a65%3A0x9d0c72b3bd41f2ef!2sMasai%20School!5e0!3m2!1sen!2sin!4v1642588495885!5m2!1sen!2sin"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section class="s2_signup_container">
+        <h1 class="s2_signuphead">Sign Up for a Newslettter</h1>
+        <h3 class="s2_signtext">Sign up for our mailing list to get lastest updates and offers.</h3>
+        <div class="s2_signinbtn">
+            <input class="s2_signupip" type="text" placeholder="Enter your email">
+            <button class="s2_signupbtn">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>Tour Agency</h2>
+            <h4>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci
+                architecto culpa amet.</h4>
+            <div class="s2_socialicon">
+                <div><img src="https://i.ibb.co/2W2530x/icons8-twitter-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/gStrTW9/icons8-facebook-f-24.png" alt=""></div>
+                <div><img src="https://i.ibb.co/rGjP2Dp/icons8-linkedin-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/60H5KLG/icons8-dribbble-64.png" alt=""></div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Book Now</h2>̥
+            <p>Flight</p>
+            <p>Hotels</p>
+            <p>Tour</p>
+            <p>Car Rent</p>
+            <p>Beach & Resorts</p>
+            <p>Cruises</p>
+        </div>
+
+        <div>
+            <h2>Top Deals</h2>
+            <p class="s2_topdeals">Edina Hotel</p>
+            <p>Quality Suites</p>
+            <p>The Hotel Zephyr</p>
+            <p>Da Vinci Villa</p>
+            <p>Hotel Epikk</p>
+        </div>
+
+        <div>
+            <h2>Blog Post</h2>
+            <h4>The Ultimate Packing List For Female Travelers</h4>
+            <h4>How These 5 People Found The Path to Their Dream Trip</h4>
+            <h4>A Definitive Guide to the Best Dining and Drinking Venues in the City</h4>
+        </div>
+
+        <div>
+            <h2>Contact Information</h2>
+            <p>291 South 21th Street, Suite 721 New York NY 10016</p>
+            <p>+ 1235 2355 98</p>
+            <p>info@yoursite.com</p>
+            <p>yoursite.com</p>
+        </div>
+
+    </footer>
+
+    <div class="s2_lastline">
+        <p>Copyright ©2022 All rights reserved | This template is made with <img
+                src="https://i.ibb.co/pW23Hzn/icons8-heart-24.png" alt="">
+        <p>&nbsp; by</p>
+        </p>
+        <p class="s2_btmline">&nbsp; Colorlib</p>&nbsp; Demo Images: <p class="s2_btmline">&nbsp; Unsplash</p>
+        <p class="s2_btmline">,&nbsp; Pexels.com</p>
+    </div>
+</body>
+<script type="text/javascript">
+    function togglemenu() {
+        document.querySelector('.contact_nav_right').classList.toggle('active')
+    }
+</script>
+
+</html>

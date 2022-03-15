@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <script type="text/javascript">
+        function togglemenu(){
+            document.querySelector('.blog_nav_right').classList.toggle('active')
+        }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+        }
+
+        /* header */
+
+        .blog_div_image{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    
+}
+
+#blog_nav_image{
+    margin-left: -4%;
+    margin-top: -15%;
+    width: 107%;
+    height: 185%;
+    background-image : linear-gradient(black,0.6 , black,0.6); 
+    
+    
+}
+#blog_div_centertext{
+    position: absolute;
+    /* border: 2px solid black; */
+    /* background: black; */
+    width: 100%;
+    height: 24vh;
+    margin-top: 200px;
+    overflow: hidden;
+    
+    
+
+}
+#blog_div_centertext1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 41px;
+    text-shadow: 2px 2px black;
+    
+}
+#blog_div_centertext2{
+    color: white;
+    font-size: 53px;
+    text-align: center;
+    margin-top: 22px;
+    margin-top: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.blog_nav_menubar{
+    position: absolute;
+margin-top: 0%;
+margin-left: 91%;
+z-index: 1;
+height: 0px;
+width: 0px;
+}
+
+#blog_nav{
+    color: white;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 35px;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.blog_nav_left{
+    font-size: 24px;
+    height: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.blog_nav_right_ul{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.blog_nav_right_ul>li{
+    padding-left: 5%;
+}
+.blog_nav_right_ul>li>a{
+    color: white;
+}
+
+.blog_nav_right_ul>li>a:hover{
+    color: rgba(255,221,0,255);
+}
+.blog_nav_right_ul>li>a:active{
+    color: rgba(255,221,0,255); 
+} 
+
+        /* header */
+
+
+
+        /* signup */
+
+        /* signnup css */
+    
+    .s2_signup_container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1437652633673-cc02b9c67a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
+        height: 72vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 7%;
+    }
+    
+    .s2_signuphead {
+        margin-top: 2%;
+        font-size: 35px;
+        margin-bottom: 2%;
+    }
+    
+    .s2_signupip {
+        height: 50px;
+        width: 18%;
+        border-radius: 25px 0px 0px 25px;
+        border: none;
+        padding-left: 15px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .s2_signupbtn {
+        border-radius: 0px 25px 25px 0px;
+        height: 50px;
+        width: 8%;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(255, 221, 0);
+        color: white;
+        font-size: 15px;
+    }
+    
+    .s2_signuphead {
+        font-weight: 400;
+    }
+    
+    .s2_signinbtn {
+        margin-bottom: 4%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .s2_signtext {
+        margin-bottom: 1.5%;
+    }
+    /* signup css */
+
+        /* signup */
+
+
+        .s2_blog_container {
+            margin-top: 8%;
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+        }
+
+        .s2_blog_content {
+            margin-left: 8%;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .s2_blog_right_content {
+            /* height: 100px; */
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .s2_blog_img {
+            background-image: url("https://i.ibb.co/nfqZxxj/venice-italy-sunset-grand-canal-158441.jpg");
+            height: 68vh;
+            width: 55vw;
+            background-size: cover;
+        }
+
+        .s2_blog_img2 {
+            background-image: url("https://i.ibb.co/1nmD1pL/istock-000001168352-small-1.jpg");
+            height: 68vh;
+            width: 55vw;
+            background-size: cover;
+        }
+
+        .s2_blog_img3 {
+            background-image: url("https://i.ibb.co/BtWpSqZ/7953e546-ac6a-11e9-8ce3-2af94b9ec815.webp");
+            height: 68vh;
+            width: 55vw;
+            background-size: cover;
+        }
+
+        .s2_blog_text {
+
+            width: 88%;
+            background: white;
+            position: relative;
+            bottom: 15vh;
+        }
+
+        .s2_dateblock {
+            display: flex;
+            gap: 2%;
+            font-size: 14px;
+            padding-top: 7%;
+            padding-left: 7%;
+        }
+
+        .s2_blog_text h3 {
+            padding-top: 2.5%;
+            padding-left: 7%;
+            font-weight: 500;
+            font-size: 28px;
+            padding-bottom: 3%;
+            cursor: pointer;
+        }
+
+        .s2_blogpara {
+            color: rgb(128, 126, 126);
+            padding-left: 7%;
+            font-size: 14px;
+            line-height: 4vh;
+        }
+
+        .s2_next_button > button{
+            height: 7vh;
+            width: 3.8vw;
+            background: white;
+            border: 1px solid rgb(218, 214, 214);
+            cursor: pointer;
+
+        }
+
+        .s2_next_button{
+            padding-bottom: 5%;
+        }
+
+        .s2_next_button :nth-child(2){
+            background: rgb(255,221,0);
+            border: none;
+        }
+
+        .s2_next_button img{
+            height: 10px;
+        }
+
+        .s2_btnhover:hover{
+            background: rgb(255,221,0);
+            border: none;
+        }
+
+        .s2_blog_divs{
+            display: flex;
+            padding-top: 7vh;
+
+        }
+
+        .s2_blog_divs img{
+            height: 15vh;
+            border-radius: 50%;
+        }
+
+        .s2_blog_divs h3{
+            font-weight: 400;
+            padding: 2vh 4vw 2vh 2vw;
+            cursor: pointer;
+        }
+
+        .s2_blog_divs p{
+            padding-left: 2vw;
+            font-size: 12px;
+        }
+
+        .s2_blog_right_content :nth-child(1){
+            font-weight: 400;
+        }
+
+        .s2_blog_right_content{
+            padding-left: 3%;
+        }
+
+
+        .s2_cate{
+            display: flex;
+            padding-left: 10%;
+        }
+
+        .s2_cate img{
+            margin-top: 4%;
+            padding-top: 5px;
+            height: 3vh;
+        }
+
+        .s2_cate p{
+            margin-top: 4%;
+            font-size: 14px;
+            padding-left: 2%;
+            cursor: pointer;
+        }
+
+        .s2_categories h3{
+            padding-bottom: 8%;
+        }
+
+        .s2_categories{
+            padding-top: 15%;
+        }
+
+
+        /* footer */
+
+        /* footer css start */
+
+footer{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(44,46,62);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+footer h2{
+    font-weight: 400;
+    padding-bottom: 8%;
+    font-size: 20px;
+    color: white;
+}
+
+footer p {
+    line-height: 6vh;
+    color: rgb(167, 168, 173);
+    font-size: 14px;
+}
+
+footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer h4{
+    font-weight: 400;
+    color: rgb(167, 168, 173);
+    font-size: 14px;
+}
+
+footer :nth-child(4) > h4{
+    padding-top: 12px;
+    padding-right: 10%;
+}
+
+footer :nth-child(1) > h4{
+    margin-left: 10%;
+    padding-top: 12px;
+    padding-right: 15%;
+    line-height: 4vh;
+}
+
+footer :nth-child(1) > h2{
+    margin-left: 10%;
+}
+
+
+.s2_socialicon{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.s2_socialicon img{
+    height: 38px;
+    width: 38px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer :nth-child(4) h4{
+    padding-right: 8vw;
+
+}
+
+footer :nth-child(4) h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer :nth-child(5) :nth-child(2){
+    padding-right: 8vw;
+}
+
+
+footer :nth-child(2) :nth-child(2){
+    padding-top: 8%;
+}
+
+.s2_topdeals{
+    padding-top: 8%;
+}
+
+
+.s2_lastline{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(44,46,62);
+    color: rgb(167, 168, 173);
+    font-size: 15px;
+
+}
+
+.s2_lastline img{
+    height: 18px;
+}
+
+.s2_btmline{
+    color: rgb(255,221,0);
+    padding-bottom: 7%;
+    cursor: pointer;
+}
+
+
+/* footer css end */
+
+        /* footer */
+
+
+
+        @media only screen and (max-width: 770px){
+    #blog_nav{
+        overflow: hidden;
+        /* background-color: black; */
+        height: 63%;
+        margin-top: 0;
+    }
+    .blog_nav_menubar{
+        position: absolute;
+        margin-top: 19%;
+    margin-left: -13%;
+    z-index: 1;
+    height: 30px;
+    width: 35px;
+    }
+    .blog_nav_menubar:hover{
+        position: absolute;
+        z-index: 1;
+        height: 34px;
+        width: 40px;
+        transition: left 0.4 ease;
+     }
+
+     .blog_nav_right.active{
+         right: 0;
+     }
+
+
+    
+    .blog_nav_right{
+        position: absolute;
+        margin-top: 85vh;
+        height: 147vh;
+        width: 267px;
+       background-color: black; 
+        right: -267px;
+        z-index: 1;
+    }
+    .blog_nav_right_ul{
+        font-size: 13px;
+        display: block;
+        list-style-type: none;
+    }
+    
+     .blog_nav_right_ul>li{
+        margin-top: 7%;
+    }
+    .blog_nav_right_ul>li>a{
+        color: white;
+    }
+    
+    .blog_nav_right_ul>li>a:hover{
+        color: rgba(255,221,0,255);
+    }
+    .blog_nav_right_ul>li>a:active{
+        color: rgba(255,221,0,255); 
+    } 
+    .blog_nav_left {
+        font-size: 24px;
+    height: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: -48vh;
+    margin-left: 4%;
+    }
+
+    .s2_blog_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s2_blog_img {
+            background-image: url("https://i.ibb.co/nfqZxxj/venice-italy-sunset-grand-canal-158441.jpg");
+            height: 80vh;
+            width: 85vw;
+            background-size: cover;
+        }
+
+        .s2_blog_img2 {
+            background-image: url("https://i.ibb.co/1nmD1pL/istock-000001168352-small-1.jpg");
+            height: 80vh;
+            width: 85vw;
+            background-size: cover;
+        }
+
+        .s2_blog_img3 {
+            background-image: url("https://i.ibb.co/BtWpSqZ/7953e546-ac6a-11e9-8ce3-2af94b9ec815.webp");
+            height: 80vh;
+            width: 85vw;
+            background-size: cover;
+        }
+
+        .s2_blog_right_content{
+            padding-left: 3%;
+        }
+
+
+        .s2_cate{
+            display: flex;
+            padding-left: 5%;
+        }
+
+        .s2_cate img{
+            margin-top: 2%;
+            padding-top: 5px;
+            height: 3vh;
+        }
+
+        .s2_cate p{
+            margin-top: 2%;
+            font-size: 14px;
+            padding-left: 2%;
+            cursor: pointer;
+        }
+
+        .s2_categories h3{
+            padding-bottom: 3%;
+        }
+
+        .s2_categories{
+            padding-top: 7%;
+        }
+
+           /* signup css */
+           .s2_signupbtn {
+            height: 45px;
+            width: 12%;
+        }
+        .s2_signupip {
+            height: 45px;
+            width: 30%;
+        }
+        .s2_signtext {
+            margin-bottom: 2%;
+        }
+        .s2_signup_container {
+            height: 80vh;
+        }
+        /* signup css */
+
+        /* footer */
+
+        
+        /* footer css start */
+
+        footer{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            text-align: left;
+            padding-left: 3%;
+        }
+        
+        
+    footer :nth-child(2) :nth-child(2){
+        padding-top: 0%;
+    }
+    
+    .s2_topdeals{
+        padding-top: 0%;
+    }
+    
+        footer h2{
+            padding-top: 5%;
+            font-weight: 400;
+            padding-bottom: 1%;
+            font-size: 20px;
+            color: white;
+        }
+    
+        footer :nth-child(1) > h2{
+            margin-left: 0%;
+        }
+    
+        footer :nth-child(1) > h4{
+            margin-left: 0%;
+        }
+    
+        .s2_socialicon{
+            margin-left: 0%;
+        }
+    
+        .s2_lastline{
+        
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(44,46,62);
+            color: rgb(167, 168, 173);
+            font-size: 13px;
+            padding-left: 3%;
+            padding-right: 3%;
+        
+        }
+        
+        .s2_lastline img{
+            height: 18px;
+        }
+        
+        .s2_btmline{
+            color: rgb(255,221,0);
+            padding-bottom: 7%;
+            cursor: pointer;
+        }
+
+        /* footer css end */
+
+        /* footer */
+
+
+}
+
+@media screen and (max-width: 460px){
+
+   
+    .s2_next_button > button{
+            height: 7vh;
+            width: 6.8vw;
+            background: white;
+            border: 1px solid rgb(218, 214, 214);
+            cursor: pointer;
+
+        }
+
+        .s2_next_button{
+            padding-bottom: 5%;
+        }
+
+          /* signup css */
+          .s2_signupbtn {
+            height: 50px;
+            width: 20%;
+            font-size: 12px;
+        }
+        .s2_signupip {
+            height: 50px;
+            width: 60%;
+        }
+        .s2_signtext {
+            margin-top: 2%;
+            margin-bottom: 4%;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 18px;
+        }
+        .s2_signup_container {
+            height: 80vh;
+        }
+        .s2_signuphead {
+            font-size: 28px;
+            font-weight: 500;
+        }
+        /* singup css */
+
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <section id="blog">
+        <!-- NAVIGATION BAR START -->
+        <nav id="blog_nav">
+
+            <div class="blog_nav_left" >TOUR</div>
+            <div class="blog_nav_right" onclick="togglemenu()">
+                <img src="menubar.png" alt="" class="blog_nav_menubar" >
+                <ul class="blog_nav_right_ul">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Tours</a>
+                    </li>
+                    <li>
+                        <a href="findHotel.html">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        
+        <div class="blog_div_image">
+            <div id="blog_div_centertext">
+                <p id="blog_div_centertext1">BY COLORLIB.COM</p>
+                <p id="blog_div_centertext2">Blog</p>
+            </div>
+            <img src="blog.webp" id="blog_nav_image">
+        </div>
+        
+        
+        <!-- NAVIGATION BAR END -->
+
+    </section>
+
+   
+
+    <section class="s2_blog_container">
+        <div class="s2_blog_content">
+            <div>
+                <div class="s2_blog_img"></div>
+                <div class="s2_blog_text">
+                    <div class="s2_dateblock">
+                        <p>Feb 24, 2018</p>
+                        <p>admin</p>
+                        <p>2 Comments</p>
+                    </div>
+                    <h3>A Definitive Guide to the Best Dining</h3>
+                    <p class="s2_blogpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, qui quod
+                        ipsum harum id, minima nesciunt! Saepe soluta, vitae quas expedita voluptatem voluptates placeat
+                        numquam provident quis, atque nisi iure?</p>
+                </div>
+            </div>
+            <div>
+                <div class="s2_blog_img2"></div>
+                <div class="s2_blog_text">
+                    <div class="s2_dateblock">
+                        <p>Feb 24, 2018</p>
+                        <p>admin</p>
+                        <p>2 Comments</p>
+                    </div>
+                    <h3>How These 5 People Found The Path to Their Dream Trip</h3>
+                    <p class="s2_blogpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, qui quod
+                        ipsum harum id, minima nesciunt! Saepe soluta, vitae quas expedita voluptatem voluptates placeat
+                        numquam provident quis, atque nisi iure?</p>
+                </div>
+            </div>
+            <div>
+                <div class="s2_blog_img3"></div>
+                <div class="s2_blog_text">
+                    <div class="s2_dateblock">
+                        <p>Feb 24, 2018</p>
+                        <p>admin</p>
+                        <p>2 Comments</p>
+                    </div>
+                    <h3>Our Secret Island Boat Tour Is just for You</h3>
+                    <p class="s2_blogpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, qui quod
+                        ipsum harum id, minima nesciunt! Saepe soluta, vitae quas expedita voluptatem voluptates placeat
+                        numquam provident quis, atque nisi iure?</p>
+                </div>
+            </div>
+
+            <div class="s2_next_button">
+                <button class="s2_btnhover"><img src="https://i.ibb.co/N1mN0WP/icons8-left-arrow-32-1.png" alt=""></button> <button>1</button> <button class="s2_btnhover">2</button> <button  class="s2_btnhover">3</button> <button  class="s2_btnhover">4</button> <button  class="s2_btnhover"><img src="https://i.ibb.co/dfrSZtQ/icons8-right-arrow-32-1.png" alt=""></button>
+            </div>
+        </div>
+        <div class="s2_blog_right_content">
+            <h3>RECENT POST</h3>
+            <div>
+                <div class="s2_blog_divs">
+                     <div><img src="https://i.ibb.co/BjTtpb2/Screenshot-470.png" alt=""></div>
+                     <div>
+                         <p>Feb 24, 2018</p>
+                         <h3>Our Secret Island Boat Tour Is just for You</h3>
+                         <p>Tour</p>
+                     </div>
+                </div>
+
+                <div class="s2_blog_divs">
+                    <div><img src="https://i.ibb.co/qChxvKX/Screenshot-469.png" alt=""></div>
+                    <div>
+                        <p>Feb 24, 2018</p>
+                        <h3>How These 5 People Found The Path to Their Dream Trip</h3>
+                        <p>Hotel</p>
+                    </div>
+               </div>
+
+               <div class="s2_blog_divs">
+                <div><img src="https://i.ibb.co/BjTtpb2/Screenshot-470.png" alt=""></div>
+                <div>
+                    <p>Feb 24, 2018</p>
+                    <h3>Our Secret Island Boat Tour Is just for You</h3>
+                    <p>Cruises</p>
+                </div>
+               </div>
+
+            </div>
+
+
+            <div class="s2_categories">
+                <h3>CATEGORIES</h3>
+
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Car rental(2)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Flight(2)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Activities(2)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Hotel(5)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Tour(2)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Travel(3)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Night(2)</p>
+                </div>
+                <div class="s2_cate">
+                    <img src="https://i.ibb.co/CMfqbp3/icons8-check-64.png" alt="">
+                    <p>Cruises(2)</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s2_signup_container s_2_animateOnScroll">
+        <h1 class="s2_signuphead">Sign Up for a Newsletter</h1>
+        <h3 class="s2_signtext">Sign up for our mailing list to get lastest updates and offers.</h3>
+        <div class="s2_signinbtn">
+            <input class="s2_signupip" type="text" placeholder="Enter your email">
+            <button class="s2_signupbtn">Subscribe</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <h2>Tour Agency</h2>
+            <h4>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</h4>
+            <div class="s2_socialicon">
+                <div><img src="https://i.ibb.co/2W2530x/icons8-twitter-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/gStrTW9/icons8-facebook-f-24.png" alt=""></div>
+                <div><img src="https://i.ibb.co/rGjP2Dp/icons8-linkedin-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/60H5KLG/icons8-dribbble-64.png" alt=""></div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Book Now</h2>
+            <p>Flight</p>
+            <p>Hotels</p>
+            <p>Tour</p>
+            <p>Car Rent</p>
+            <p>Beach & Resorts</p>
+            <p>Cruises</p>
+        </div>
+
+        <div>
+            <h2>Top Deals</h2>
+            <p class="s2_topdeals">Edina Hotel</p>
+            <p>Quality Suites</p>
+            <p>The Hotel Zephyr</p>
+            <p>Da Vinci Villa</p>
+            <p>Hotel Epikk</p>
+        </div>
+
+        <div>
+            <h2>Blog Post</h2>
+            <h4>The Ultimate Packing List For Female Travelers</h4>
+            <h4>How These 5 People Found The Path to Their Dream Trip</h4>
+            <h4>A Definitive Guide to the Best Dining and Drinking Venues in the City</h4>
+        </div>
+
+        <div>
+            <h2>Contact Information</h2>
+            <p>291 South 21th Street, Suite 721 New York NY 10016</p>
+            <p>+ 1235 2355 98</p>
+            <p>info@yoursite.com</p>
+            <p>yoursite.com</p>
+        </div>
+
+    </footer>
+
+    <div class="s2_lastline">
+        <p>Copyright ©2022 All rights reserved | This template is made with <img src="https://i.ibb.co/pW23Hzn/icons8-heart-24.png" alt=""> <p>&nbsp; by</p> </p><p class="s2_btmline">&nbsp; Colorlib</p>&nbsp; Demo Images: <p class="s2_btmline">&nbsp; Unsplash</p><p class="s2_btmline">,&nbsp; Pexels.com</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUR</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript">
+        function togglemenu() {
+            document.querySelector('.S1_nav_right').classList.toggle('active')
+        }
+    </script>
+
+</head>
+
+<body>
+    <section id="S1">
+        <!-- NAVIGATION BAR START -->
+        <nav id="S1_nav">
+
+            <div class="S1_nav_left">TOUR</div>
+            <div class="S1_nav_right" onclick="togglemenu()">
+                <img src="menubar.png" alt="" class="S1_nav_menubar">
+                <ul class="S1_nav_right_ul">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Tours</a>
+                    </li>
+                    <li>
+                        <a href="findHotel.html">Hotels</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- NAVIGATION BAR END -->
+
+        <!-- SLIDING IMAGE START -->
+        <div class="S1_div_image">
+            <div id="S1_div_centertext">
+                <p id="S1_div_centertext1">10 DAYS CRUISE</p>
+                <p id="S1_div_centertext2">From Greece to Spain</p>
+            </div>
+            <img src="image13.webp" id="image" class="S1_home_image">
+        </div>
+        <!-- SLIDING IMAGE END -->
+
+
+        <!-- TAB START -->
+        <div class="S1_tab">
+
+            <div class="S1_button_container">
+                <button onclick="showPanel(0,'#2c2e3e')">Flight</button>
+                <button onclick="showPanel(1,'#2c2e3e')">Hotel</button>
+                <button onclick="showPanel(2,'#2c2e3e')">Car Rent</button>
+                <button onclick="showPanel(3,'#2c2e3e')">Cruises</button>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form1">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="number">Guest:</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form2">
+                    <div>
+                        <p id="S1_tab_pannel_form2_p1">BOOK NOW</p>
+                        <p id="S1_tab_pannel_form2_p2">BEST PRICE ONLINE</p>
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="">Guest:</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight">
+                    </div>
+                </form>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form3">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Start Date:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Return Date:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight3">
+                    </div>
+                </form>
+            </div>
+            <div class="S1_tab_pannel">
+                <form class="S1_tab_pannel_form3">
+                    <div>
+                        <label for="">Where:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Check-in">Check-in:</label>
+                        <input placeholder="Check-in-date" type="text" onfocus="(this.type='date')">
+                    </div>
+                    <div>
+                        <label for="Check-out">Check-out:</label>
+                        <input placeholder="Check-out-date" type="text" onfocus="(this.type='date')">
+                    </div>
+
+                    <div>
+                        <label for="" style="color:#2c2e3e ;">find flight</label>
+                        <input type="submit" value="Find Flight" id="findflight3">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- TAB END -->
+
+        <!-- BOX START -->
+        <section class="s2_afternav_block s_2_animateOnScroll">
+            <div class="s2_main_afternav_blue">
+                <div class="s2_amazimg">
+                    <img src="https://i.ibb.co/d5tBs9K/around.png" alt="">
+                </div>
+                <div>
+                    <h2 class="s2_amazingh">Amazing Travel</h2>
+                </div>
+                <div>
+                    <p class="s2_amzpara">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+    
+            <div class="s2_main_afternav">
+                <div class="s2_amazimg">
+                    <img src="https://i.ibb.co/j3BdNdj/icons8-ship-64.png" alt="">
+                </div>
+                <div>
+                    <h2 class="s2_amazingh">Our Cruises</h2>
+                </div>
+                <div>
+                    <p class="s2_amzpara">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+    
+            <div class="s2_main_afternav">
+                <div class="s2_amazimg">
+                    <img src="https://i.ibb.co/qRv5gjq/icons8-car-64.png" alt="">
+                </div>
+                <div>
+                    <h2 class="s2_amazingh">Book Your Trip</h2>
+                </div>
+                <div>
+                    <p class="s2_amzpara">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+    
+            <div class="s2_main_afternav">
+                <div class="s2_amazimg">
+                    <img src="https://i.ibb.co/q0PkrKr/icons8-news-50.png" alt="">
+                </div>
+                <div>
+                    <h2 class="s2_amazingh">Nice Support</h2>
+                </div>
+                <div>
+                    <p class="s2_amzpara">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </section>
+        <!-- Box ends -->
+        
+
+    <section class="s2_popular_des s_2_animateOnScroll">
+        <div>
+            <h1 class="s2_popular_des_title">Popular Destination</h1>
+            <p class="s2_popular_des_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+
+        <div class="s2_picture_container">
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/LdRMdCg/Screenshot-458.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back s2_flip-box-back1">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">543 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">ATHENS, GREECE</h3>
+                        <p class="s2_imgtext">Athens,Greece</p>
+                        <h3 class="s2_imgtext">$450</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/56xMDPJ/Screenshot-459.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back2">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">748 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN THAILAND</h3>
+                        <p class="s2_imgtext">Bankok, Thailand</p>
+                        <h3 class="s2_imgtext">$650</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/Nm6MN0f/Screenshot-460.png" alt="">
+                    </div>
+
+                    <div class="s2_flip-box-back  s2_flip-box-back3">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">543 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN PHILIPPINES</h3>
+                        <p class="s2_imgtext">Lipa, Philippines</p>
+                        <h3 class="s2_imgtext">$450</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/nLdLkpn/Screenshot-462.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back4">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">364 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN GREECE</h3>
+                        <p class="s2_imgtext">Athens, Greece</p>
+                        <h3 class="s2_imgtext">$550</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/0DXyjXh/Screenshot-463.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back5">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">943 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN INDIA</h3>
+                        <p class="s2_imgtext">Mumbai, INDIA</p>
+                        <h3 class="s2_imgtext">$850</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/jvtWV19/Screenshot-464.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back6">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">754 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN UNITED KINGDOM</h3>
+                        <p class="s2_imgtext">London, United Kingdom</p>
+                        <h3 class="s2_imgtext">$470</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/jgRS31p/Screenshot-465.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back7">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">543 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN PHILIPPINES</h3>
+                        <p class="s2_imgtext">Lipa, Philippines</p>
+                        <h3 class="s2_imgtext">$450</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s2_flip-box">
+                <div class="s2_flip-box-inner">
+                    <div class="s2_flip-box-front">
+                        <img src="https://i.ibb.co/sWXP4GC/Screenshot-466.png" alt="">
+                    </div>
+                    <div class="s2_flip-box-back  s2_flip-box-back8">
+                        <div class="s2_starblock">
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <span class="fa fa-star s2_checked"></span>
+                            <p class="s2_imgtext">256 Reviews</p>
+                        </div>
+
+                        <h3 class="s2_imgtext">FAMILY TOUR IN CHINA</h3>
+                        <p class="s2_imgtext">Beging, China</p>
+                        <h3 class="s2_imgtext">$643</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="s2_blog s_2_animateOnScroll">
+        <h1 class="s2_popular_des_title">Recent Blog</h1>
+        <p class="s2_popular_des_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+
+
+    <section class="s2_blog_content s_2_animateOnScroll">
+        <div class="s2_left_img">
+            <img src="https://i.ibb.co/02pdrdB/Screenshot-467.png" alt="">
+        </div>
+        <div class="s2_right_content">
+            <div class="s2_right_particular">
+                <div class="s2_round_img">
+                    <img src="https://i.ibb.co/zF33jSd/Screenshot-468.png" height="80px" width="80px" alt="">
+                </div>
+                <div class="s2_img_right_content">
+                    <p>Feb 22, 2018</p>
+                    <h2 class="s2_blogtit">A Definitive Guide to the Best Dining</h2>
+                    <p class="s2_act">Activities</p>
+                </div>
+            </div>
+
+            <div class="s2_right_particular">
+                <div class="s2_round_img">
+                    <img src="https://i.ibb.co/qChxvKX/Screenshot-469.png" height="80px" width="80px" alt="">
+                </div>
+                <div class="s2_img_right_content">
+                    <p>Feb 22, 2018</p>
+                    <h2 class="s2_blogtit">How These 5 People Found The Path to Their Dream Trip</h2>
+                    <p class="s2_act">Activities</p>
+                </div>
+            </div>
+
+            <div class="s2_right_particular">
+                <div class="s2_round_img">
+                    <img src="https://i.ibb.co/BjTtpb2/Screenshot-470.png" height="80px" width="80px" alt="">
+                </div>
+                <div class="s2_img_right_content">
+                    <p>Feb 22, 2018</p>
+                    <h2 class="s2_blogtit"> Our Secret Island Boat Tour Is just for You</h2>
+                    <p class="s2_act">Activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="s2_sale_container s_2_animateOnScroll">
+        <div class="s2_percent_block">
+            <div class="s2_45poff">
+                <div class="s2_45">
+                    <h1>45</h1>
+                </div>
+                <div class="s2_poff">
+                    <h5 class="s2_per">%</h5>
+                    <h5 class="s2_off">OFF</h5>
+                </div>
+            </div>
+            <div class="s2_sale">
+                <h1>SALE</h1>
+            </div>
+        </div>
+
+        <div class="s2_offer_block">
+            <div class="s2_offer_head">
+                <p class="s2_offertitle">Just Hurry up limited offer!</p>
+                <p class="s2_offerparag">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+            <div class="s2_offer_btns">
+                <button class="s2_offerbook_btn">Book Now</button>
+                <button class="s2_offerread_btn">Read more</button>
+            </div>
+        </div>
+
+        <div class="s2_video_block">
+            <img class="s2_video_img" src="https://images.unsplash.com/photo-1612377777651-ffe615a0f1d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+            <button class="s2_videoplay_btn"><img height="50%" src="https://i.ibb.co/Cmtfr5c/icons8-video-call-24.png" alt=""></button>
+        </div>
+    </section>
+
+
+    <div class="s2_recd_hotal s_2_animateOnScroll">
+        <h1 class="s2_recd_hotal_title">Recommended Hotels</h1>
+        <p class="s2_recd_hotal_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+
+
+    <section class="s2_hotal_slider s_2_animateOnScroll">
+
+        <div class="s2_leftright_btn">
+            <div id="s2_rightbtn" onclick="s2_moveright()">
+                <button><img height="15vh" src="https://i.ibb.co/N1mN0WP/icons8-left-arrow-32-1.png" alt=""></button>
+            </div>
+
+            <div id="s2_leftbtn" onclick="s2_moveleft()">
+                <button><img height="15vh" src="https://i.ibb.co/dfrSZtQ/icons8-right-arrow-32-1.png" alt=""></button>
+            </div>
+        </div>
+
+
+        <div class="s2_hotel_slider_block">
+            <div class="s2_hsblock_child" id="s2_img1">
+                <img src="https://i.ibb.co/C9c4rJw/Screenshot-476.png" alt="">
+                <div class="s2_hotal_review">
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <p class="s2_review">256 Reviews</p>
+                </div>
+                <div>
+                    <h2 class="s2_hotelhead">Hotel Edison</h2>
+                    <p class="s2_hotelplace">New York, USA</p>
+                    <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+                </div>
+            </div>
+
+            <div class="s2_hsblock_child" id="s2_img2">
+                <img src="https://i.ibb.co/hgKg9C8/Screenshot-477.png" alt="">
+                <div class="s2_hotal_review">
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <p class="s2_review">256 Reviews</p>
+                </div>
+                <div>
+                    <h2 class="s2_hotelhead">Hotel Edison</h2>
+                    <p class="s2_hotelplace">New York, USA</p>
+                    <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+                </div>
+            </div>
+
+            <div class="s2_hsblock_child" id="s2_img3">
+                <img src="https://i.ibb.co/VVwdms1/Screenshot-478.png" alt="">
+                <div class="s2_hotal_review">
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <p class="s2_review">256 Reviews</p>
+                </div>
+                <div>
+                    <h2 class="s2_hotelhead">Hotel Edison</h2>
+                    <p class="s2_hotelplace">New York, USA</p>
+                    <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+                </div>
+            </div>
+
+            <div class="s2_hsblock_child" id="s2_img4">
+                <img src="https://i.ibb.co/27fDD0Y/Screenshot-479.png" alt="">
+                <div class="s2_hotal_review">
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <p class="s2_review">256 Reviews</p>
+                </div>
+                <div>
+                    <h2 class="s2_hotelhead">Hotel Edison</h2>
+                    <p class="s2_hotelplace">New York, USA</p>
+                    <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+                </div>
+            </div>
+
+            <div class="s2_hsblock_child" id="s2_img5">
+                <img src="https://i.ibb.co/C9c4rJw/Screenshot-476.png" alt="">
+                <div class="s2_hotal_review">
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <span class="fa fa-star s2_checked"></span>
+                    <p class="s2_review">256 Reviews</p>
+                </div>
+                <div>
+                    <h2 class="s2_hotelhead">Hotel Edison</h2>
+                    <p class="s2_hotelplace">New York, USA</p>
+                    <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+                </div>
+            </div>
+        </div>
+
+        <div class="s2_hsblock_child" id="s2_img6">
+            <img src="https://i.ibb.co/hgKg9C8/Screenshot-477.png" alt="">
+            <div class="s2_hotal_review">
+                <span class="fa fa-star s2_checked"></span>
+                <span class="fa fa-star s2_checked"></span>
+                <span class="fa fa-star s2_checked"></span>
+                <span class="fa fa-star s2_checked"></span>
+                <span class="fa fa-star s2_checked"></span>
+                <p class="s2_review">256 Reviews</p>
+            </div>
+            <div>
+                <h2 class="s2_hotelhead">Hotel Edison</h2>
+                <p class="s2_hotelplace">New York, USA</p>
+                <P class="s2_hotelDes">A small river named Duden flows by their place and supplies it with the necessary regelialia.</P>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <div class="s2_guest_head s_2_animateOnScroll">
+        <h1 class="s2_guest_title">Our Satisfied Guests says</h1>
+        <p class="s2_guest_para">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+
+    <section class="s2_guest_block">
+
+
+        <div id="s2_guestleft" onclick="s2_guestmoveright()">
+            <button><img height="25vh" src="https://i.ibb.co/N1mN0WP/icons8-left-arrow-32-1.png" alt=""></button>
+        </div>
+
+        <div class="s2_guestparent">
+            <div class="s2_guestchild" id="s2guest1">
+                <img src="https://i.ibb.co/ySzqqKP/Screenshot-480.png" alt="">
+                <p class="s2_guestname">Jacob Webb</p>
+                <p class="s2_guestfrom">Athenas, Greece</p>
+                <p class="s2_guestdetail">" Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."</p>
+            </div>
+
+            <div class="s2_guestchild" id="s2guest2">
+                <img src="https://i.ibb.co/PN4YZQg/Screenshot-481.png" alt="">
+                <p class="s2_guestname">James Fisher</p>
+                <p class="s2_guestfrom">New York , USA</p>
+                <p class="s2_guestdetail">"One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."</p>
+            </div>
+
+            <div class="s2_guestchild" id="s2guest3">
+                <img src="https://i.ibb.co/qjRJ3gK/Screenshot-482.png" alt="">
+                <p class="s2_guestname">Alysha Myers</p>
+                <p class="s2_guestfrom">Miami Florida, USA</p>
+                <p class="s2_guestdetail">" A small river named Duden flows by their place and supplies it with the necessary regelialia."</p>
+            </div>
+        </div>
+
+        <div id="s2_guestright" onclick="s2_guestmoveleft()">
+            <button><img height="25vh" src="https://i.ibb.co/dfrSZtQ/icons8-right-arrow-32-1.png" alt=""></button>
+        </div>
+
+
+    </section>
+
+
+    <div class="s2_pop_countryblock s_2_animateOnScroll">
+        <h1 class="s2_pop_countyh">Most Popular Travel Countries</h1>
+        <p class="s2_pop_countryp">We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    </div>
+
+
+    <section class="s2_country1_block s_2_animateOnScroll">
+
+        <div class="s2_left_country1">
+            <div class="s2_country_img1">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country_img2">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country_img3">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country_img4">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="s2_right_country1">
+            <div>
+                <h2 class="s2_italyh">ITALY, EUROPE</h2>
+                <p class="s2_hotlpara">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named
+                    Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+
+            <h3>BEST TOURS CITY</h3>
+
+            <table class="s2_rightTable">
+                <tr>
+                    <td>Rome</td>
+                    <td>Venice</td>
+                    <td>Palermo</td>
+                </tr>
+
+                <tr>
+                    <td>Milan</td>
+                    <td>Bologna</td>
+                    <td>Siena</td>
+                </tr>
+
+                <tr>
+                    <td>Genoa</td>
+                    <td>Trieste</td>
+                    <td>San Marino</td>
+                </tr>
+
+                <tr>
+                    <td>Verona</td>
+                    <td>Florence</td>
+                    <td>Naples</td>
+                </tr>
+            </table>
+
+            <button class="s2_viewTable">View All Places</button>
+
+        </div>
+
+    </section>
+
+
+    <section class="s2_country2_block s_2_animateOnScroll">
+
+
+        <div class="s2_right_country2">
+            <div>
+                <h2>ATHENS, GREECE</h2>
+                <p class="s2_hotlpara2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named
+                    Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+
+            <h3>BEST TOURS CITY</h3>
+
+            <table class="s2_rightTable2">
+                <tr>
+                    <td>Rome</td>
+                    <td>Venice</td>
+                    <td>Palermo</td>
+                </tr>
+
+                <tr>
+                    <td>Milan</td>
+                    <td>Bologna</td>
+                    <td>Siena</td>
+                </tr>
+
+                <tr>
+                    <td>Genoa</td>
+                    <td>Trieste</td>
+                    <td>San Marino</td>
+                </tr>
+
+                <tr>
+                    <td>Verona</td>
+                    <td>Florence</td>
+                    <td>Naples</td>
+                </tr>
+            </table>
+
+            <button class="s2_viewTable">View All Places</button>
+
+        </div>
+
+
+        <div class="s2_left_country2">
+            <div class="s2_country2_img1">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country2_img2">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country2_img3">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+
+            <div class="s2_country2_img4">
+                <p>ROME - 5 DAYS</p>
+                <div class="s2_contryper">
+                    <p>$120</p>
+                    <p>/person</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="s2_signup_container s_2_animateOnScroll">
+        <h1 class="s2_signuphead">Sign Up for a Newsletter</h1>
+        <h3 class="s2_signtext">Sign up for our mailing list to get lastest updates and offers.</h3>
+        <div class="s2_signinbtn">
+            <input class="s2_signupip" type="text" placeholder="Enter your email">
+            <button class="s2_signupbtn">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>Tour Agency</h2>
+            <h4>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</h4>
+            <div class="s2_socialicon">
+                <div><img src="https://i.ibb.co/2W2530x/icons8-twitter-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/gStrTW9/icons8-facebook-f-24.png" alt=""></div>
+                <div><img src="https://i.ibb.co/rGjP2Dp/icons8-linkedin-30.png" alt=""></div>
+                <div><img src="https://i.ibb.co/60H5KLG/icons8-dribbble-64.png" alt=""></div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Book Now</h2>
+            <p>Flight</p>
+            <p>Hotels</p>
+            <p>Tour</p>
+            <p>Car Rent</p>
+            <p>Beach & Resorts</p>
+            <p>Cruises</p>
+        </div>
+
+        <div>
+            <h2>Top Deals</h2>
+            <p class="s2_topdeals">Edina Hotel</p>
+            <p>Quality Suites</p>
+            <p>The Hotel Zephyr</p>
+            <p>Da Vinci Villa</p>
+            <p>Hotel Epikk</p>
+        </div>
+
+        <div>
+            <h2>Blog Post</h2>
+            <h4>The Ultimate Packing List For Female Travelers</h4>
+            <h4>How These 5 People Found The Path to Their Dream Trip</h4>
+            <h4>A Definitive Guide to the Best Dining and Drinking Venues in the City</h4>
+        </div>
+
+        <div>
+            <h2>Contact Information</h2>
+            <p>291 South 21th Street, Suite 721 New York NY 10016</p>
+            <p>+ 1235 2355 98</p>
+            <p>info@yoursite.com</p>
+            <p>yoursite.com</p>
+        </div>
+
+    </footer>
+
+    <div class="s2_lastline">
+        <p>Copyright ©2022 All rights reserved | This template is made with <img src="https://i.ibb.co/pW23Hzn/icons8-heart-24.png" alt=""> <p>&nbsp; by</p> </p><p class="s2_btmline">&nbsp; Colorlib</p>&nbsp; Demo Images: <p class="s2_btmline">&nbsp; Unsplash</p><p class="s2_btmline">,&nbsp; Pexels.com</p>
+    </div>
+
+    <button onclick="topFunction()" id="s2_topBtn" title="Go to top"><img src="https://i.ibb.co/HH7X0Zy/icons8-up-arrow-32.png" alt=""></button>
+
+</body>
+
+</html>
+<script src="home.js">
+    $('.S1_nav_menubar').click(function() {
+        $('this').toggleClass("click")
+    })
+</script>
+
+<script>
+</script>
